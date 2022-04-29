@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "255564065529",
+    "project_id": "scholaraid-84a3e",
+    "storage_bucket": "scholaraid-84a3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255564065529:android:d9f49c6ecf565e43665028",
+        "android_client_info": {
+          "package_name": "com.ctrlaltelite.scholar_aid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255564065529-qrsqr515qrp0crv7m3960u221cuf8bfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXKfNAoWSb109za-qQWJs0bB8nmXmxpN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255564065529-qrsqr515qrp0crv7m3960u221cuf8bfs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
