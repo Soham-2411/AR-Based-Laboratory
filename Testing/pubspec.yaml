@@ -30,7 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
   hexcolor:
-  model_viewer: ^0.8.1
+  model_viewer:
 
 
   # The following adds the Cupertino Icons font to your application.
