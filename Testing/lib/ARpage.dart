@@ -14,10 +14,10 @@ List<ARModelDetails> _arModelDetails = [
       'https://storage.echo3d.co/raspy-thunder-0385/a09a6d34-39c6-4810-8dfe-d9025e15abb1.glb',
       'DNA Model'),
   ARModelDetails(
-      'https://storage.echoar.xyz/raspy-thunder-0385/44faa8a4-09df-419f-9a24-5b9fa9fc6930.glb',
+      'https://storage.echo3d.co/0_model_samples/d2398ecf-566b-4fde-b8cb-46b2fd6add1d.glb',
       'Lab Equipment'),
   ARModelDetails(
-      'https://storage.echoar.xyz/raspy-thunder-0385/f0eebfe3-8494-4171-bc9e-354b4bd6033e.glb',
+      'https://storage.echo3d.co/0_model_samples/d686a655-e800-430d-bfd2-e38cdfb0c9e9.glb',
       'Lungs Expanded'),
 ];
 
