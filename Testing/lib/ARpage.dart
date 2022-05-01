@@ -14,11 +14,23 @@ List<ARModelDetails> _arModelDetails = [
       'https://storage.echo3d.co/raspy-thunder-0385/a09a6d34-39c6-4810-8dfe-d9025e15abb1.glb',
       'DNA Model'),
   ARModelDetails(
-      'https://storage.echo3d.co/0_model_samples/d2398ecf-566b-4fde-b8cb-46b2fd6add1d.glb',
+      'https://storage.echo3d.co/rapid-flower-4578/40484504-3205-4591-a4c4-35107fd09bdc.glb',
       'Lab Equipment'),
   ARModelDetails(
-      'https://storage.echo3d.co/0_model_samples/d686a655-e800-430d-bfd2-e38cdfb0c9e9.glb',
-      'Lungs Expanded'),
+      'https://storage.echo3d.co/rapid-flower-4578/5fb567d7-5368-4975-b06d-5a5e7029f7ef.glb',
+      'Mircoscope'),
+  ARModelDetails(
+      'https://storage.echo3d.co/rapid-flower-4578/5fb567d7-5368-4975-b06d-5a5e7029f7ef.glb',
+      'Collision model'),
+  ARModelDetails(
+      'https://storage.echo3d.co/rapid-flower-4578/5fb567d7-5368-4975-b06d-5a5e7029f7ef.glb',
+      'Human brain'),
+  ARModelDetails(
+      'https://storage.echo3d.co/rapid-flower-4578/5fb567d7-5368-4975-b06d-5a5e7029f7ef.glb',
+      'Electric motor'),
+  ARModelDetails(
+      'https://storage.echo3d.co/rapid-flower-4578/5fb567d7-5368-4975-b06d-5a5e7029f7ef.glb',
+      'Chemsitry lab equipment'),
 ];
 
 class ARModels extends StatefulWidget {
