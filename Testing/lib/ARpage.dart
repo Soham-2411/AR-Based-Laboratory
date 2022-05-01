@@ -3,34 +3,42 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:model_viewer/model_viewer.dart';
 
 class ARModelDetails {
+  final String image;
   final String link;
   final String title;
 
-  ARModelDetails(this.link, this.title);
+  ARModelDetails(this.image, this.link, this.title);
 }
 
 List<ARModelDetails> _arModelDetails = [
   ARModelDetails(
-      'https://storage.echo3d.co/raspy-thunder-0385/a09a6d34-39c6-4810-8dfe-d9025e15abb1.glb',
-      'DNA Model'),
+      'assets/BlocksLabEquipment.png',
+      'https://storage.echo3d.co/rapid-flower-4578/34ec05f9-13e7-4c41-bcd0-b268aadf1b1c.glb',
+      'Lab Equipments'),
   ARModelDetails(
-      'https://storage.echo3d.co/rapid-flower-4578/40484504-3205-4591-a4c4-35107fd09bdc.glb',
-      'Lab Equipment'),
+      'assets/DNA.png',
+      'https://storage.echo3d.co/rapid-flower-4578/7b50f257-b3e1-400a-aeed-e96a8eba9072.glb',
+      'DNA Molecule'),
   ARModelDetails(
-      'https://storage.echo3d.co/rapid-flower-4578/5fb567d7-5368-4975-b06d-5a5e7029f7ef.glb',
-      'Mircoscope'),
+      'assets/Heart.png',
+      'https://storage.echo3d.co/rapid-flower-4578/c7d2116f-8d6f-4d44-93fd-2c223156ecbf.glb',
+      'Heart'),
   ARModelDetails(
-      'https://storage.echo3d.co/rapid-flower-4578/5fb567d7-5368-4975-b06d-5a5e7029f7ef.glb',
-      'Collision model'),
+      'assets/PendulumString.png',
+      'https://storage.echo3d.co/rapid-flower-4578/512e0abe-92eb-4733-bca1-2d191756ed40.glb',
+      'Pendulum'),
   ARModelDetails(
-      'https://storage.echo3d.co/rapid-flower-4578/5fb567d7-5368-4975-b06d-5a5e7029f7ef.glb',
-      'Human brain'),
+      'assets/Lungs.png',
+      'https://storage.echo3d.co/rapid-flower-4578/ba7b2646-a27e-4bc6-8be8-deeddfa2a94b.glb',
+      'Lungs'),
   ARModelDetails(
-      'https://storage.echo3d.co/rapid-flower-4578/5fb567d7-5368-4975-b06d-5a5e7029f7ef.glb',
-      'Electric motor'),
+      'assets/Computer.png',
+      'https://storage.echo3d.co/rapid-flower-4578/0a8e65fe-cf97-4e4c-b7f9-999622ef2545.glb',
+      'Computer'),
   ARModelDetails(
-      'https://storage.echo3d.co/rapid-flower-4578/5fb567d7-5368-4975-b06d-5a5e7029f7ef.glb',
-      'Chemsitry lab equipment'),
+      'assets/Beaker.png',
+      'https://storage.echo3d.co/rapid-flower-4578/c5483603-cb85-4dd2-9ce1-7afac8f90a89.glb',
+      'Beaker'),
 ];
 
 class ARModels extends StatefulWidget {
@@ -57,17 +65,17 @@ class _ARModelsState extends State<ARModels> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Text(
-                      "AR Models",
+                      "AR Laboratory Models",
                       style: TextStyle(
                           fontSize: width * 0.1,
                           color: Colors.white,
                           fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     for (int index = 0; index < _arModelDetails.length; index++)
@@ -77,16 +85,21 @@ class _ARModelsState extends State<ARModels> {
                             style: ElevatedButton.styleFrom(
                                 elevation: 10,
                                 primary: HexColor("#261D32"),
-                                shape: RoundedRectangleBorder(
+                                shape: const RoundedRectangleBorder(
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15)))),
-                            child: Container(
+                            child: SizedBox(
                                 height: 150,
                                 width: width - 100,
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
-                                    SizedBox(
+                                    CircleAvatar(
+                                      radius: 45,
+                                      backgroundImage: AssetImage(
+                                          _arModelDetails[index].image),
+                                    ),
+                                    const SizedBox(
                                       width: 20,
                                     ),
                                     Text(
@@ -115,7 +128,7 @@ class _ARModelsState extends State<ARModels> {
                                           )));
                             },
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           )
                         ],
